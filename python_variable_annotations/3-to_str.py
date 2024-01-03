@@ -1,4 +1,4 @@
-#!/sur/bin/env python3
+#!/usr/bin/env python3
 """
 Module creates type-annotated function that takes a float argument
 and returns string representation of the float.
