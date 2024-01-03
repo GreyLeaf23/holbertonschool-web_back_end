@@ -1,4 +1,4 @@
-#!/usr/binpython3
+#!/usr/bin/env python3
 """
 Module creates type-annotated function that takes two floats arguments
 and returns their sum.
