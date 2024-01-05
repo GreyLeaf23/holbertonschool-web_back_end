@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Module defines a measure_runtime coroutine that will execute async_comprehension
-four times in parallel using asyncio.gather.
+Module defines a measure_runtime coroutine that will execute
+async_comprehension four times in parallel using asyncio.gather.
 """
 import asyncio
 import time
