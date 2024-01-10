@@ -1,0 +1,3 @@
+// Script shows command that inserts a document into a collection in MongoDB.
+
+db.school.insert({name: "Holberton School"})
