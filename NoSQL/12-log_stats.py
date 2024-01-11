@@ -20,9 +20,10 @@ for method in methods:
     method_count = nginx_collection.count_documents({"method": method})
     print("\tmethod {}: {}".format(method, method_count))
 
-status_logs = nginx_collection.count_documents({"method": "GET", "path": "/status"})
+status_logs = nginx_collection.count_documents({"method": "GET",
+                                                "path": "/status"})
 print("{} status check".format(status_logs))
 
 
 if __name__ == "__main__":
-    client = MongoClient('mongodb://localhost:27017')
+    pass
