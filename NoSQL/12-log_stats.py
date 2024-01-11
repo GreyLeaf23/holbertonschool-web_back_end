@@ -8,8 +8,8 @@ from pymongo import MongoClient
 
 def data_logs():
     """
-    Provides some stats about Nginx logs stored
-    in MongoDB.
+    Gather the logs collection from the database logs
+    and return it.
     """
     client = MongoClient('mongodb://127.0.0.1:27017')
     logs_db = client.logs
