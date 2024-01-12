@@ -40,7 +40,7 @@ class Server:
         return self.__indexed_dataset
 
     def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict:
-            pass
+        pass
 
     def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict:
         """Returns a dictionary containing the following key-value pairs.
