@@ -42,13 +42,18 @@ class Server:
     def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict:
         pass
 
-    def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict:
-        """Returns a dictionary containing the following key-value pairs.
+    def get_hyper(self, page: int = None, page_size: int = 10) -> Dict:
         """
+        Returns a dictionary containing the following key-value pairs.
+        """
+        if page is None:
+            page = 1
+
         assert type(page) is int and page > 0
         assert type(page_size) is int and page_size > 0
 
         total_pages = math.ceil(len(self.dataset()) / page_size)
+
         return {
             'page_size': len(self.get_page(page, page_size)),
             'page': page,
