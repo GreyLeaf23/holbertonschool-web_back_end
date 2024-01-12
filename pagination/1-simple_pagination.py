@@ -6,6 +6,13 @@ import math
 from typing import List, Tuple
 
 
+def index_range(page: int, page_size: int) -> Tuple[int, int]:
+    """Returns a tuple containing the start and end document indexes"""
+    start = (page - 1) * page_size
+    end = start + page_size
+    return (start, end)
+
+
 class Server:
     """Server class to paginate a database of popular baby names.
     """
@@ -32,12 +39,5 @@ class Server:
         assert type(page) is int and page > 0
         assert type(page_size) is int and page_size > 0
 
-        start, end = self.index_range(page, page_size)
+        start, end = index_range(page, page_size)
         return self.dataset()[start:end]
-
-
-    def index_range(page: int, page_size: int) -> Tuple[int, int]:
-        """Returns a tuple containing the start and end document indexes"""
-        start = (page - 1) * page_size
-        end = start + page_size
-        return (start, end)
