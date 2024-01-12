@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """
+Module defines a Server class that returns a list of lists of strings
+containing data from dataset.
 """
 import csv
 import math
