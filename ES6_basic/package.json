@@ -1,4 +1,8 @@
 {
+  "name": "es6_basic",
+  "version": "1.0.0",
+  "description": "ES6 Basic Learning",
+  "main": "./ES6_basic",
   "scripts": {
     "lint": "./node_modules/.bin/eslint",
     "check-lint": "lint [0-9]*.js",
