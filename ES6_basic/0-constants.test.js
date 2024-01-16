@@ -1,16 +1,22 @@
 /* eslint-disable */
 import { taskFirst, getLast, taskNext } from './0-constants';
 
-describe('ES6_basic/0-constants', () => {
-    it('should return a constant', () => {
-        expect(taskFirst()).toEqual('I prefer const when i can.');
+describe("ES6_basic/0-constants.js", () => {
+    describe("taskFirst()", () => {
+        it("should return 'I prefer const when I can.'", () => {
+        expect(taskFirst()).toBe("I prefer const when I can.");
+        });
     });
 
-    it('should return a constant', () => {
-        expect(getLast()).toEqual(' is okay');
+    describe("getLast()", () => {
+        it("should return ' is okay'", () => {
+        expect(getLast()).toBe(" is okay");
+        });
     });
 
-    it('should return a constant', () => {
-        expect(taskNext()).toEqual('But sometimes let is okay');
+    describe("taskNext()", () => {
+        it("should return 'But sometimes let is okay'", () => {
+        expect(taskNext()).toBe("But sometimes let is okay");
+        });
     });
     });
