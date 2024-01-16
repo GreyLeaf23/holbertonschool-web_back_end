@@ -1,21 +1,24 @@
 import { taskFirst, getLast, taskNext } from './0-constants';
 
-describe('eS6_basic/0-constants.js', () => {
-  describe('taskFirst()', () => {
-    it("should return 'I prefer const when I can.'", () => {
-      expect(taskFirst()).toBe('I prefer const when I can.');
-    });
+describe('0-constants.js', () => {
+  it('taskFirst function', () => {
+    expect.assertions(1);
+    const expectedResult = 'I prefer const when i can.';
+    const result = taskFirst();
+    expect(result).toBe(expectedResult);
   });
 
-  describe('getLast()', () => {
-    it("should return ' is okay'", () => {
-      expect(getLast()).toBe(' is okay');
-    });
+  it('getLast function', () => {
+    expect.assertions(1);
+    const expectedResult = ' is okay';
+    const result = getLast();
+    expect(result).toBe(expectedResult);
   });
 
-  describe('taskNext()', () => {
-    it("should return 'But sometimes let is okay'", () => {
-      expect(taskNext()).toBe('But sometimes let is okay');
-    });
+  it('taskNext function', () => {
+    expect.assertions(1);
+    const expectedResult = 'But sometimes let is okay';
+    const result = taskNext();
+    expect(result).toBe(expectedResult);
   });
 });
