@@ -1,7 +1,7 @@
 /* eslint-disable */
 import ClassRoom from './0-classroom';
 
-function initializeRooms() {
+export default function initializeRooms() {
   let room1 = new ClassRoom(19);
   let room2 = new ClassRoom(20);
   let room3 = new ClassRoom(34);
