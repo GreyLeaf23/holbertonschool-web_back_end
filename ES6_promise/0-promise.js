@@ -1,5 +1,10 @@
 /* eslint-disable */
 
-export default function getResponseFromAPI() {
-    return new Promise(() => {});
-}
+function getResponseFromAPI () {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve();
+        });
+    });
+  }
+  export default getResponseFromAPI;
