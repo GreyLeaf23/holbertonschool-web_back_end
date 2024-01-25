@@ -1,5 +1,5 @@
 /* eslint-disable */
-function getResponseFromAPI() {
+ export default function getResponseFromAPI() {
     return new Promise((resolve, reject) => {
       // Simulate API call
       setTimeout(() => {
