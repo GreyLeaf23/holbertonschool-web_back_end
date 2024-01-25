@@ -1,7 +1,7 @@
-// Return a Promise
-function getResponseFromAPI() {
-  return new Promise((resolve) => {
-    resolve('I did promise');
+export default function getResponseFromAPI() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve('true');
+    });
   });
 }
-export default getResponseFromAPI;
