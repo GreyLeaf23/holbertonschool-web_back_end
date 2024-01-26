@@ -4,7 +4,7 @@ function getResponseFromAPI() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve('true');
-      reject(new Error('The fake API is not working currently'));
+      reject(new Error('API'));
     });
   });
 }
