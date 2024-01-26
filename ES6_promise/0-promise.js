@@ -3,5 +3,6 @@ export default function getResponseFromAPI() {
     setTimeout(() => {
       resolve('true');
     });
+    reject(new Error());
   });
 }
