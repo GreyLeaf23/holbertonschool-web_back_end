@@ -1,0 +1,17 @@
+#!/bin/bash
+#echo "Write the name of the file"
+#read FILENAME
+#touch $FILENAME
+#chmod +x $FILENAME
+#emacs $FILENAME
+#git add .
+#echo "Write a commit message:"
+#read COMMITMESSAGE
+#git commit -m "$COMMITMESSAGE"
+#git push
+
+
+for i in 1 2 3 4 5 6 7 8 9
+do
+    touch $i-main.js
+done
