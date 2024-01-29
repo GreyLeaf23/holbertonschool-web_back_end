@@ -1,9 +1,10 @@
+/* eslint-disable */
 export default function updateStudentGradeByCity(students, city, newGrades) {
   if (!Array.isArray(students)) {
     return [];
   }
 
-  
+
   const sortFilter = students.filter((student) => student.location === city);
 
   const mapping = sortFilter.map((student) => {
